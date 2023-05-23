@@ -16,8 +16,8 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [showOTP, setShowOTP] = useState(false);
   const [user, setUser] = useState(null);
-  const { state } = useLocation();
-  const { phone } = state;
+  // const { state } = useLocation();
+  // const { phone } = state;
 
   function onCaptchVerify() {
     if (!window.recaptchaVerifier) {

@@ -16,7 +16,7 @@ export default function SignInUI(props) {
         console.log("Successful signed In");
         console.log(u);
 
-        navigate("/otp", { state: { phone: phone } });
+        navigate("/signature", { state: { phone: phone } });
       })
       .catch((err) => {
         console.log("Unsuccessful sign In");

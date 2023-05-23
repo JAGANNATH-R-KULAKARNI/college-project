@@ -9,6 +9,7 @@ import SignInUI from "./Components/SignIn/SignIn";
 import SignUpUI from "./Components/SignUp/SignUp";
 import "./index.css";
 import OTPUI from "./Components/OTP/Otp";
+import SignatureUI from "./Components/Signature/Signature";
 
 function App() {
   const [signedUp, setSignedUp] = React.useState(false);
@@ -23,6 +24,7 @@ function App() {
         />
         <Route path="/signin" element={<SignInUI signedUp={signedUp} />} />
         <Route path="/otp" element={<OTPUI />} />
+        <Route path="/signature" element={<SignatureUI />} />
       </Routes>
       <div style={{ height: "198px" }}></div>
     </div>
